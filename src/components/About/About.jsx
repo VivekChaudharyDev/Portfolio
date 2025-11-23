@@ -63,10 +63,7 @@ const About = () => {
           </h3>
           {/* About me paragraph */}
           <p className="text-base sm:text-lg md:text-lg dark:text-dark-para text-light-para mb-10 mt-8 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ratione maiores recusandae tempore quas error, cum ipsum qui
-            numquam obcaecati? Neque rerum tempora magnam similique molestias 
-            dolor voluptatibus aut tempore tenetur!
+            I am an MCA student and aspiring software engineer with experience in cloud computing, full-stack development, and AI projects. I focus on building practical solutions, improving my skills, and creating meaningful real-world applications.
           </p>
           {/* Resume Button */}
           <a href="https://drive.usercontent.google.com/u/0/uc?id=10VW__PPh_4z0U2oH5RNE28WRpJ8lejp_&export=download" rel="noopener noreferrer"
