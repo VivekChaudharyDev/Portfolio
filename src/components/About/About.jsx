@@ -62,11 +62,14 @@ const About = () => {
             />}
           </h3>
           {/* About me paragraph */}
-          <p className="text-base sm:text-lg md:text-lg dark:text-dark-para text-light-para mb-10 mt-8 leading-relaxed">
-            I am an MCA student and aspiring software engineer with experience in cloud computing, full-stack development, and AI projects. I focus on building practical solutions, improving my skills, and creating meaningful real-world applications.
+          <p className="text-base sm:text-lg md:text-lg dark:text-dark-para text-light-para mb-10 mt-8 leading-relaxed text-justify tracking-tight">
+            I am an MCA student and aspiring software engineer with experience in cloud computing,
+            full-stack development, and AI projects. I focus on building practical solutions,
+            improving my skills, and creating meaningful real-world applications.
           </p>
+
           {/* Resume Button */}
-          <a href="https://drive.usercontent.google.com/u/0/uc?id=10VW__PPh_4z0U2oH5RNE28WRpJ8lejp_&export=download" rel="noopener noreferrer"
+          <a href="https://drive.usercontent.google.com/u/0/uc?id=1gI62Xs8ammjII-joESZmnZVpV05cXIoH&export=download" rel="noopener noreferrer"
             target="_blanck"
             className="inline-block dark:text-dark-text text-light-text py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
