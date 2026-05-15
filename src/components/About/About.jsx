@@ -50,8 +50,8 @@ const About = () => {
               words={[
                 "Fullstack Developer",
                 "App Developer",
-                "UI/UX Designer",
-                "Coder",
+                "Problem Solver",
+                "Knowledge Seeker",
               ]}
               loop={0}
               cursor
