@@ -59,3 +59,8 @@ html {
 @utility clip-path-custom {
   clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 95%, 0 100%);
 }
+
+@utility clip-path-custom-reverse {
+  /* Reversed: Points are mirrored to dip from left to right */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 95%, 0 98%);
+}

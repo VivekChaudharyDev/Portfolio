@@ -40,9 +40,10 @@ import agcLogo from './assets/company_logo/agc_logo.png';
 import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
 
 // Education Section Logo's
-import glaLogo from './assets/education_logo/gla_logo.png';
-import bsaLogo from './assets/education_logo/bsa_logo.png';
-import vpsLogo from './assets/education_logo/vps_logo.png';
+import vitlogo from './assets/education_logo/vitlogo.png';
+import lsLogo from './assets/education_logo/lsLogo.jpg';
+import srpsLogo from './assets/education_logo/srps_img.png';
+import skksdLogo from './assets/education_logo/skksd_img.png';
 
 // Project Section Logo's
 import githubdetLogo from './assets/work_logo/github_det.png';
@@ -140,39 +141,39 @@ export const SkillsInfo = [
   export const education = [
     {
       id: 0,
-      img: glaLogo,
-      school: "GLA University, Mathura",
-      date: "Sept 2022 - July 2024",
-      grade: "7.81 CGPA",
-      desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
+      img: vitlogo,
+      school: "Vellore Institute of Technology, Vellore",
+      date: "July 2024 - July 2026",
+      grade: "7.93 CGPA",
+      desc: "I have completed my Master's degree (MCA) in Computer Applications from Vellore Institute of Technology, Vellore. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Machine Learning, Web Development, And Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
       degree: "Master of Computer Applications - MCA",
     },
     {
       id: 1,
-      img: bsaLogo,
-      school: "BSA College, Mathura",
-      date: "Sept 2018 - Aug 2021",
-      grade: "73.2%",
-      desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-      degree: "Bachelor of Science - BSC (Computer Science)",
+      img: lsLogo,
+      school: "LS College, Muzaffarpur",
+      date: "June 2021 - July 2024",
+      grade: "78.5%",
+      desc: "I completed my Bachelor's degree (BCA) in Computer Applications from LS College, Muzaffarpur. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at LS College allowed me to work on projects that applied theoretical concepts to real-world problems.",
+      degree: "Bachelor of Computer Applications - BCA",
     },
     {
       id: 2,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2017 - March 2018",
-      grade: "78%",
-      desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-      degree: "CBSE(XII) - PCM with Computer Science",
+      img: srpsLogo,
+      school: "S.R.P.S. College, Jaintpur",
+      date: "Apr 2019 - March 2021",
+      grade: "75.2%",
+      desc: "I completed my class 12 education from S.R.P.S. College, Jaintpur, under the BSEB Patna, where I studied Physics, Chemistry, and Mathematics (PCM).",
+      degree: "BSEB(XII) - PCM",
     },
     {
       id: 3,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2015 - March 2016",
-      grade: "87.5%",
-      desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
-      degree: "CBSE(X), Science with Computer Application",
+      img: skksdLogo,
+      school: "S.K.K.S.D. High School, Jaintpur",
+      date: "Apr 2018 - April 2019",
+      grade: "73.6%",
+      desc: "I completed my class 10 education from S.K.K.S.D. High School, Jaintpur, under the BSEB Patna, where I studied Science and Arts.",
+      degree: "BSEB(X), Science and Arts",
     },
   ];
   

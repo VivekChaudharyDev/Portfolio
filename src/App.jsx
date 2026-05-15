@@ -32,7 +32,7 @@ function App() {
         <Skills />
         <Experience />
         <Projects />
-        {/* <Education /> */}
+        <Education />
         {/* <Contact /> */}
         {/* <Footer /> */}
       </div>

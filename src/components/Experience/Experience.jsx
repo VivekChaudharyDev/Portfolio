@@ -6,7 +6,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-24 pb-24 px-4 md:px-[7vw] lg:px-[15vw] font-sans dark:bg-skills-gradient-dark bg-skills-gradient-light overflow-x-hidden"
+      className="py-24 pb-24 px-4 md:px-[7vw] lg:px-[15vw] font-sans dark:bg-skills-gradient-dark bg-skills-gradient-light overflow-x-hidden clip-path-custom-reverse"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -14,7 +14,7 @@ const Experience = () => {
           EXPERIENCE
         </h2>
         <div className="w-24 h-1 bg-global-clr mx-auto mt-2"></div>
-        <p className="dark:text-dark-para text-light-para mt-4 text-lg font-semibold max-w-2xl mx-auto">
+        <p className="dark:text-dark-para text-light-para mt-4 text-lg font-semibold max-w-4xl mx-auto">
           A collection of my work experience and the roles I have taken in various organizations
         </p>
       </div>
