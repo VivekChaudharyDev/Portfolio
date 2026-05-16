@@ -12,6 +12,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Fix autofill background overriding theme colors */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #f1f5f9 inset !important;
+  -webkit-text-fill-color: #112e42 !important;
+  caret-color: #112e42;
+}
+
+[data-theme="dark"] input:-webkit-autofill,
+[data-theme="dark"] input:-webkit-autofill:hover,
+[data-theme="dark"] input:-webkit-autofill:focus,
+[data-theme="dark"] input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #081d2c inset !important;
+  -webkit-text-fill-color: #c9d9e8 !important;
+  caret-color: #c9d9e8;
+}
+
 /* custom animation */
 @keyframes blob {
   0%   { transform: scale(1); }
@@ -22,6 +41,12 @@ html {
 
 /* theme tokens + animations */
 @theme {
+
+  --toastify-color-success: #0fbbff;
+  --toastify-color-error: #ff499e;
+  --toastify-color-dark: #081d2c;
+  --toastify-text-color-dark: #c9d9e8;
+  --toastify-font-family: "Poppins", ui-sans-serif, system-ui, sans-serif;
 
   /* register animation */
   --animate-blob: blob 5s infinite;

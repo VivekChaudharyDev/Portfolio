@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section 
       id="projects" 
-      className="py-24 pb-24 px-[8vw] md:px-[7vw] lg:px-[15vw] font-sans relative dark:bg-skills-gradient-dark bg-skills-gradient-light clip-path-custom"
+      className="py-20 pb-24 px-[8vw] md:px-[7vw] lg:px-[15vw] font-sans relative dark:bg-skills-gradient-dark bg-skills-gradient-light clip-path-custom"
     >
       {/* Section Title */}
       <div className='text-center mb-16'>

@@ -114,12 +114,12 @@ const Navbar = () => {
     { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
     { id: "education", label: "Education" },
-    // { id: "contact", label: "Contact" },
+    { id: "contact", label: "Contact" },
   ];
 
   return (
     <nav
-      className={`fixed font-bold top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
+      className={`fixed font-bold top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[18vw] ${
         isScrolled
           ? "bg-dark-bg/20 backdrop-blur-lg shadow-lg"
           : "bg-transparent"
@@ -128,7 +128,7 @@ const Navbar = () => {
       <div className="text-dark-text py-5 flex justify-between items-center">
         {/* Logo */}
         <div
-          className="text-2xl font-semibold cursor-pointer"
+          className="text-xl font-semibold cursor-pointer"
           onClick={() => handleMenuItemClick("about")}
         >
           <span className="text-global-clr">&lt;</span>

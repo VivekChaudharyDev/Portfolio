@@ -6,7 +6,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-24 pb-24 px-4 md:px-[7vw] lg:px-[15vw] font-sans dark:bg-skills-gradient-dark bg-skills-gradient-light overflow-x-hidden clip-path-custom-reverse"
+      className="py-20 pb-24 px-4 md:px-[7vw] lg:px-[15vw] font-sans dark:bg-skills-gradient-dark bg-skills-gradient-light overflow-x-hidden clip-path-custom-reverse"
     >
       {/* Section Title */}
       <div className="text-center mb-16">

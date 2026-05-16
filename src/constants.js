@@ -34,10 +34,7 @@ import postgreLogo from './assets/tech_logo/postgre.png';
 import csharpLogo from './assets/tech_logo/csharp.png';
 
 // Experience Section Logo's
-import webverseLogo from './assets/company_logo/webverse_logo.png';
 import infosyslogo from './assets/company_logo/infosys_logo.jpg';
-import agcLogo from './assets/company_logo/agc_logo.png';
-import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
 
 // Education Section Logo's
 import vitlogo from './assets/education_logo/vitlogo.png';
@@ -46,15 +43,6 @@ import srpsLogo from './assets/education_logo/srps_img.png';
 import skksdLogo from './assets/education_logo/skksd_img.png';
 
 // Project Section Logo's
-import githubdetLogo from './assets/work_logo/github_det.png';
-import csprepLogo from './assets/work_logo/cs_prep.png';
-import movierecLogo from './assets/work_logo/movie_rec.png';
-import taskremLogo from './assets/work_logo/task_rem.png';
-import npmLogo from './assets/work_logo/npm.png';
-import webverLogo from './assets/work_logo/web_dig.png';
-import cmLogo from './assets/work_logo/cm.png';
-import imagesearchLogo from './assets/work_logo/image_search.png';
-import removebgLogo from './assets/work_logo/remove_bg.png';
 import talkbridgeLogo from './assets/work_logo/talkbridge.jpg';
 import edutaskLogo from './assets/work_logo/edutask.png';
 import pdfutilLogo from './assets/work_logo/pdfUtility.png';
