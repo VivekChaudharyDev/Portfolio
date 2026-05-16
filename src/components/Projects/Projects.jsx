@@ -43,7 +43,7 @@ const Projects = () => {
               </div>
 
               {/* Title & Description */}
-              <h3 className="text-xl font-bold text-global-clr leading-tight mb-1">{project.title}</h3>
+              <h3 className="text-xl font-bold text-global-clr leading-tight mb-1 py-2">{project.title}</h3>
               <p className="dark:text-dark-para text-light-para text-sm leading-relaxed flex-grow mb-4">
                 {project.description}
               </p>
