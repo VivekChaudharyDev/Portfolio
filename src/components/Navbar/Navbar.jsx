@@ -62,20 +62,23 @@ const Navbar = () => {
         sections.forEach((section) => observer.unobserve(section));
       }
 
-      const isMobile = window.innerWidth < 768;
       observer = new IntersectionObserver(
         (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setActiveSection(entry.target.id);
-            }
-          });
+          // Collect all currently intersecting sections and pick the one
+          // closest to the top of the viewport (smallest boundingClientRect.top >= 0)
+          const intersecting = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+          if (intersecting.length > 0) {
+            setActiveSection(intersecting[0].target.id);
+          }
         },
         {
-          threshold: isMobile ? 0.2 : 0.4,
-          rootMargin: isMobile
-            ? `-${navHeight + 40}px 0px -${navHeight + 140}px 0px`
-            : `-${navHeight + 20}px 0px -${navHeight + 100}px 0px`,
+          // Use a single threshold so every section triggers reliably
+          threshold: 0.15,
+          // Only offset the top by the navbar height; leave a generous bottom margin
+          rootMargin: `-${navHeight}px 0px -30% 0px`,
         }
       );
 
