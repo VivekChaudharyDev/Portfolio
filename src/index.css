@@ -26,7 +26,7 @@ html {
   /* register animation */
   --animate-blob: blob 5s infinite;
 
-  /* 🎨 Custom colors */
+  /* Custom colors */
   --color-light-bg: #f1f5f9;
   --color-dark-bg: #081d2c;
   --color-light-text: #081d2c;
@@ -41,9 +41,9 @@ html {
     linear-gradient(78.73deg, rgba(8,29,44,0.15) 0%, rgba(8,29,44,0) 50%),
     linear-gradient(141.27deg, rgba(15,187,255,0) 50%, rgba(15,187,255,0.15) 100%);
 
-    --skills-gradient-light:
-  linear-gradient(78.73deg, rgba(241,245,249,0.6) 0%, rgba(241,245,249,0) 50%),
-  linear-gradient(141.27deg, rgba(15,187,255,0) 50%, rgba(15,187,255,0.15) 100%);
+  --skills-gradient-light:
+    linear-gradient(78.73deg, rgba(241,245,249,0.6) 0%, rgba(241,245,249,0) 50%),
+    linear-gradient(141.27deg, rgba(15,187,255,0) 50%, rgba(15,187,255,0.15) 100%);
 
 }
 
@@ -57,10 +57,9 @@ html {
 }
 
 @utility clip-path-custom {
-  clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 98%, 0 100%);
 }
 
 @utility clip-path-custom-reverse {
-  /* Reversed: Points are mirrored to dip from left to right */
-  clip-path: polygon(0 0, 100% 0, 100% 98%, 25% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 97%, 0 100%);
 }
