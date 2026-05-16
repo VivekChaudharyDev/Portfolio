@@ -34,7 +34,7 @@ function App() {
         <Projects />
         <Education />
         <Contact />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   )
