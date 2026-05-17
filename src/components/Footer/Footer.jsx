@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
+import { SiLeetcode } from "react-icons/si";
 import { MdDarkMode, MdLightMode } from 'react-icons/md';
 
 const Footer = () => {
@@ -36,22 +37,25 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className='flex justify-center space-x-6 mt-6 text-2xl'>
           <a href='https://github.com/VivekChaudharyCS' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
-            <FaGithub />
+            <FaGithub title="GitHub" />
           </a>
           <a href='https://www.linkedin.com/in/vivek-kumar-software-developer' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
-            <FaLinkedin />
+            <FaLinkedin title="LinkedIn" />
+          </a>
+          <a href='https://leetcode.com/u/VivekKumarCS/' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
+            <SiLeetcode title="LeetCode" />
           </a>
           <a href='https://x.com/Vivek_Kumar_CS' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
-            <FaTwitter />
+            <FaTwitter title="Twitter" />
           </a>
           <a href='https://instagram.com/vivek_kumar_cs' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
-            <FaInstagram />
+            <FaInstagram title="Instagram" />
           </a>
           <a href='https://www.facebook.com/VivekChaudharyCS/' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
-            <FaFacebook />
+            <FaFacebook title="Facebook" />
           </a>
           <a href='https://youtube.com/@vivekchaudharydev' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
-            <FaYoutube />
+            <FaYoutube title="YouTube" />
           </a>
         </div>
 

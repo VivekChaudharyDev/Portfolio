@@ -170,7 +170,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="dark:text-dark-text text-light-text hover:text-global-clr"
           >
-            <FaGithub size={24} />
+            <FaGithub size={24} title="GitHub" />
           </a>
           <a
             href="https://www.linkedin.com/in/vivek-kumar-software-developer"
@@ -178,7 +178,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="dark:text-dark-text text-light-text hover:text-global-clr"
           >
-            <FaLinkedin size={24} />
+            <FaLinkedin size={24} title="LinkedIn" />
           </a>
           <button
             onClick={toggleTheme}
@@ -186,9 +186,9 @@ const Navbar = () => {
             className="inherit hover:cursor-pointer "
           >
             {theme === "dark" ? (
-              <MdLightMode className="text-yellow-300 hover:text-global-clr rounded-full" />
+              <MdLightMode className="text-yellow-300 hover:text-global-clr rounded-full" title="Switch to Light Mode" />
             ) : (
-              <MdDarkMode className="text-light-text hover:text-global-clr rounded-full" />
+              <MdDarkMode className="text-light-text hover:text-global-clr rounded-full" title="Switch to Dark Mode" />
             )}
           </button>
         </div>
@@ -238,7 +238,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="text-dark-text hover:text-global-clr"
               >
-                <FaGithub size={24} />
+                <FaGithub size={24} title="GitHub" />
               </a>
               <a
                 href="https://www.linkedin.com/in/vivek-kumar-software-developer"
@@ -246,7 +246,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="text-dark-text hover:text-global-clr"
               >
-                <FaLinkedin size={24} />
+                <FaLinkedin size={24} title="LinkedIn" />
               </a>
               <button
                 onClick={toggleTheme}
@@ -256,9 +256,9 @@ const Navbar = () => {
                 className="inherit hover:cursor-pointer "
               >
                 {theme === "dark" ? (
-                  <MdLightMode className="text-yellow-300 hover:text-global-clr rounded-full " />
+                  <MdLightMode className="text-yellow-300 hover:text-global-clr rounded-full" title="Switch to Dark Mode" />
                 ) : (
-                  <MdDarkMode className="text-light-text hover:text-global-clr rounded-full" />
+                  <MdDarkMode className="text-light-text hover:text-global-clr rounded-full" title="Switch to Light Mode" />
                 )}
               </button>
             </div>
