@@ -41,16 +41,16 @@ const Footer = () => {
           <a href='https://www.linkedin.com/in/vivek-kumar-software-developer' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
             <FaLinkedin />
           </a>
-          <a href='https://twitter.com/vivekkumar' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
+          <a href='https://x.com/Vivek_Kumar_CS' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
             <FaTwitter />
           </a>
-          <a href='https://instagram.com/vivekkumar' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
+          <a href='https://instagram.com/vivek_kumar_cs' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
             <FaInstagram />
           </a>
-          <a href='https://facebook.com/vivekkumar' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
+          <a href='https://www.facebook.com/VivekChaudharyCS/' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
             <FaFacebook />
           </a>
-          <a href='https://youtube.com/vivekkumar' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
+          <a href='https://youtube.com/@vivekchaudharydev' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
             <FaYoutube />
           </a>
         </div>
