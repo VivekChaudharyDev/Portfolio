@@ -136,7 +136,7 @@ export const SkillsInfo = [
       img: vitlogo,
       school: "Vellore Institute of Technology, Vellore",
       date: "July 2024 - July 2026",
-      grade: "7.93 CGPA",
+      grade: "8.14 CGPA",
       desc: "I have completed my Master's degree (MCA) in Computer Applications from Vellore Institute of Technology, Vellore. During my time at VIT, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Machine Learning, Web Development, And Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at VIT University has been instrumental in shaping my technical abilities and professional growth.",
       degree: "Master of Computer Applications - MCA",
     },
