@@ -31,40 +31,40 @@ const About = () => {
       <div className="flex flex-col md:flex-row justify-between items-center">
         {/* Left Side */}
         {/* Left Side */}
-<div className="md:w-1/2 flex justify-center md:justify-end mt-4 mb-10 ml-3 relative">
-  <Tilt
-    className="w-48 h-48 sm:w-64 sm:h-64 md:h-[30rem] md:w-[30rem] rounded-full relative flex items-center justify-center"
-    tiltMaxAngleX={15}
-    tiltMaxAngleY={15}
-    perspective={1000}
-    scale={1.05}
-    transitionSpeed={1500}
-  >
-    {/* 1. GLOW LAYERS (Background) */}
-    <div className="absolute inset-0 rounded-full pointer-events-none"
-      style={{
-        boxShadow: `-18px 0px 60px 12px rgba(34, 211, 238, 0.5),
+        <div className="md:w-1/2 flex justify-center md:justify-end mt-4 mb-10 ml-3 relative">
+          <Tilt
+            className="w-48 h-48 sm:w-64 sm:h-64 md:h-[30rem] md:w-[30rem] rounded-full relative flex items-center justify-center"
+            tiltMaxAngleX={15}
+            tiltMaxAngleY={15}
+            perspective={1000}
+            scale={1.05}
+            transitionSpeed={1500}
+          >
+            {/* 1. GLOW LAYERS (Background) */}
+            <div className="absolute inset-0 rounded-full pointer-events-none"
+              style={{
+                boxShadow: `-18px 0px 60px 12px rgba(34, 211, 238, 0.5),
                     18px 0px 60px 12px rgba(236, 72, 153, 0.5)`
-      }}
-    />
+              }}
+            />
 
-    {/* 2. THE ACTUAL GRADIENT RING */}
-    {/* We use padding to define the ring thickness. The background of this div is the ring. */}
-    <div className="absolute inset-0 rounded-full p-[4px] bg-gradient-to-tr from-cyan-400 via-pink-500 to-purple-600">
-      
-      {/* 3. THE IMAGE CONTAINER */}
-      {/* This div is nested INSIDE the ring div. 
+            {/* 2. THE ACTUAL GRADIENT RING */}
+            {/* We use padding to define the ring thickness. The background of this div is the ring. */}
+            <div className="absolute inset-0 rounded-full p-[4px] bg-gradient-to-tr from-cyan-400 via-pink-500 to-purple-600">
+
+              {/* 3. THE IMAGE CONTAINER */}
+              {/* This div is nested INSIDE the ring div. 
           Its background creates the "black gap" look or seamless look depending on padding. */}
-      <div className="h-full w-full rounded-full overflow-hidden bg-[#020c1b] flex items-center justify-center">
-        <img
-          src={isDark ? darkProfileImage : profileImage}
-          alt="Vivek's Image"
-          className="h-full w-full object-cover scale-110" 
-        />
-      </div>
-    </div>
-  </Tilt>
-</div>
+              <div className="h-full w-full rounded-full overflow-hidden bg-[#020c1b] flex items-center justify-center">
+                <img
+                  src={isDark ? darkProfileImage : profileImage}
+                  alt="Vivek's Image"
+                  className="h-full w-full object-cover scale-110"
+                />
+              </div>
+            </div>
+          </Tilt>
+        </div>
         {/* Right Side */}
         <div className="md:w-1/2 text-center md:text-left ml-15 mr-10 md:mt-0">
           {/* Greeting */}
