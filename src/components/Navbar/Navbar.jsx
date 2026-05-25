@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
+import faviconDark from '../../assets/myProfileDark.png';
+import faviconLight from '../../assets/myProfile1.png';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +31,7 @@ const Navbar = () => {
     
     //dynamic favicon update based on theme
     const favicon = document.querySelector("link[rel='icon']");
-    favicon.href = theme === "dark" ? "/src/assets/myProfileDark.png" : "/src/assets/myProfile1.png";
+    favicon.href = theme === "dark" ? faviconDark : faviconLight;
   }, [theme]);
 
   const toggleTheme = () => {
