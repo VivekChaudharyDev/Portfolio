@@ -25,6 +25,10 @@ const Navbar = () => {
     const html = document.documentElement;
     html.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
+    
+    //dynamic favicon update based on theme
+    const favicon = document.querySelector("link[rel='icon']");
+    favicon.href = theme === "dark" ? "/src/assets/myProfileDark.png" : "/src/assets/myProfile1.png";
   }, [theme]);
 
   const toggleTheme = () => {

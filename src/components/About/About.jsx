@@ -3,6 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useState } from "react";
 import Tilt from 'react-parallax-tilt';
 import profileImage from '../../assets/myProfile.png'
+import profileImage1 from '../../assets/myProfile1.png'
 import darkProfileImage from '../../assets/myProfileDark.png'
 
 const About = () => {
@@ -57,7 +58,7 @@ const About = () => {
           Its background creates the "black gap" look or seamless look depending on padding. */}
               <div className="h-full w-full rounded-full overflow-hidden bg-[#020c1b] flex items-center justify-center">
                 <img
-                  src={isDark ? darkProfileImage : profileImage}
+                  src={isDark ? darkProfileImage : profileImage1}
                   alt="Vivek's Image"
                   className="h-full w-full object-cover scale-110"
                 />
