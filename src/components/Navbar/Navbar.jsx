@@ -28,7 +28,7 @@ const Navbar = () => {
     const html = document.documentElement;
     html.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
-    
+
     //dynamic favicon update based on theme
     const favicon = document.querySelector("link[rel='icon']");
     favicon.href = theme === "dark" ? faviconDark : faviconLight;
@@ -109,9 +109,18 @@ const Navbar = () => {
 
     const element = document.getElementById(itemId);
     if (element) {
-      let yOffset = itemId === "about" ? -160 : 0; // ✅ offset for navbar
+      let yOffset;
+      if (itemId === "about") {
+        yOffset = -160;
+      } else if (itemId === "skills" || itemId === "contact") {
+        yOffset = -20;
+      } else {
+        yOffset = -80;
+      }
       const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
+
+      setActiveSection(sectionId);
     }
   };
 
@@ -126,11 +135,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed font-bold top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[18vw] ${
-        isScrolled
+      className={`fixed font-bold top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[18vw] ${isScrolled
           ? "bg-dark-bg/20 backdrop-blur-lg shadow-lg"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="text-dark-text py-5 flex justify-between items-center">
         {/* Logo */}
@@ -153,10 +161,9 @@ const Navbar = () => {
               className={`relative 
                 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 
                 after:h-[2px] after:bg-global-clr after:transition-all after:duration-300 after:ease-in-out 
-                hover:after:w-full ${
-                  activeSection === item.id
-                    ? "after:w-full text-global-clr"
-                    : ""
+                hover:after:w-full ${activeSection === item.id
+                  ? "after:w-full text-global-clr"
+                  : ""
                 }`}
             >
               <button
@@ -226,10 +233,9 @@ const Navbar = () => {
                 className={`relative cursor-pointer 
                   after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 
                   after:h-[2px] after:bg-global-clr after:transition-all after:duration-300 after:ease-in-out 
-                  hover:after:w-full ${
-                    activeSection === item.id
-                      ? "after:w-full text-global-clr"
-                      : ""
+                  hover:after:w-full ${activeSection === item.id
+                    ? "after:w-full text-global-clr"
+                    : ""
                   }`}
               >
                 <button onClick={() => handleMenuItemClick(item.id)}>
@@ -257,9 +263,8 @@ const Navbar = () => {
               </a>
               <button
                 onClick={toggleTheme}
-                area-label={`Switch to ${
-                  theme === "dark" ? "light" : "dark"
-                } mode`}
+                area-label={`Switch to ${theme === "dark" ? "light" : "dark"
+                  } mode`}
                 className="inherit hover:cursor-pointer "
               >
                 {theme === "dark" ? (

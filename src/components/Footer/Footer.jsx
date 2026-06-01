@@ -4,12 +4,32 @@ import { SiLeetcode } from "react-icons/si";
 import { MdDarkMode, MdLightMode } from 'react-icons/md';
 
 const Footer = () => {
-    const handleScroll = (sectionId) => {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+  const handleScroll = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      // 1. Calculate the offset (using the same logic as your menu click)
+      let yOffset;
+      if (sectionId === "about") {
+        yOffset = -160;
+      } else if (sectionId === "skills" || sectionId === "contact") {
+        yOffset = -20;
+      } else {
+        yOffset = -80;
       }
-    };
+
+      // 2. Calculate absolute position on the page
+      const y = section.getBoundingClientRect().top + window.scrollY + yOffset;
+
+      // 3. Execute the smooth scroll
+      window.scrollTo({
+        top: y,
+        behavior: "smooth"
+      });
+
+      // 4. Update the active state (optional, but keeps UI in sync)
+      // setActiveSection(sectionId);
+    }
+  };
   return (
     <footer className='text-light-text dark:text-dark-text py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]'>
       <div className='container mx-auto text-center'>
