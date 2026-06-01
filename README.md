@@ -4,7 +4,7 @@ A sleek, responsive, and fully customizable **animated portfolio website** built
 
 ## 🚀 Live Demo
 
-🔗 [View Portfolio Live](link)
+🔗 [View Portfolio Live](https://vivekkumardev.vercel.app)
 
 ## 🛠️ Tech Stack
 
@@ -51,5 +51,5 @@ npm run build
 
 ## 🌟 Credits
 
-This project was created with ❤️ by [Vivek Kumar](link).
+This project was created with ❤️ by [Vivek Kumar](https://vivekkumardev.vercel.app).
 If you like it, feel free to ⭐ this repository and share!
