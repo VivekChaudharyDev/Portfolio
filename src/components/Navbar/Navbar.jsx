@@ -200,9 +200,9 @@ const Navbar = () => {
             className="inherit hover:cursor-pointer "
           >
             {theme === "dark" ? (
-              <MdLightMode className="text-yellow-300 hover:text-global-clr rounded-full" title="Switch to Light Mode" />
+              <MdLightMode className="text-yellow-300 hover:text-global-clr rounded-full" title="Switch to Light Mode" size={24} />
             ) : (
-              <MdDarkMode className="text-light-text hover:text-global-clr rounded-full" title="Switch to Dark Mode" />
+              <MdDarkMode className="text-light-text hover:text-global-clr rounded-full" title="Switch to Dark Mode" size={24} />
             )}
           </button>
         </div>
@@ -268,9 +268,9 @@ const Navbar = () => {
                 className="inherit hover:cursor-pointer "
               >
                 {theme === "dark" ? (
-                  <MdLightMode className="text-yellow-300 hover:text-global-clr rounded-full" title="Switch to Dark Mode" />
+                  <MdLightMode className="text-yellow-300 hover:text-global-clr rounded-full" title="Switch to Dark Mode" size={24} />
                 ) : (
-                  <MdDarkMode className="text-light-text hover:text-global-clr rounded-full" title="Switch to Light Mode" />
+                  <MdDarkMode className="text-light-text hover:text-global-clr rounded-full" title="Switch to Light Mode" size={24} />
                 )}
               </button>
             </div>
