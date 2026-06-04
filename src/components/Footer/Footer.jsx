@@ -56,7 +56,7 @@ const Footer = () => {
 
         {/* Social Media Icons */}
         <div className='flex justify-center space-x-6 mt-6 text-2xl'>
-          <a href='https://github.com/VivekChaudharyCS' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
+          <a href='https://github.com/VivekChaudharyDev' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
             <FaGithub title="GitHub" />
           </a>
           <a href='https://www.linkedin.com/in/vivek-kumar-software-developer' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
