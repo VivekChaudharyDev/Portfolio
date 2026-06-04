@@ -62,7 +62,7 @@ const Footer = () => {
           <a href='https://www.linkedin.com/in/vivek-kumar-software-developer' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
             <FaLinkedin title="LinkedIn" />
           </a>
-          <a href='https://leetcode.com/u/VivekKumarCS/' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
+          <a href='https://leetcode.com/u/VivekKumarDev/' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>
             <SiLeetcode title="LeetCode" />
           </a>
           <a href='https://x.com/Vivek_Kumar_CS' target='_blank' rel='noopener noreferrer' className='hover:text-global-clr transition-colors duration-300'>

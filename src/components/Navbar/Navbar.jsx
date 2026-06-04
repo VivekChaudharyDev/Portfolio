@@ -179,7 +179,7 @@ const Navbar = () => {
         {/* Social Media Icons */}
         <div className="hidden md:flex space-x-4 text-2xl">
           <a
-            href="https://github.com/VivekChaudharyCS"
+            href="https://github.com/VivekChaudharyDev"
             target="_blank"
             rel="noopener noreferrer"
             className="dark:text-dark-text text-light-text hover:text-global-clr"
