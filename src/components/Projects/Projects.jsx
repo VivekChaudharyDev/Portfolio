@@ -63,13 +63,13 @@ const Projects = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="grid grid-cols-2 gap-3 mt-auto">
+              <div className="flex flex-wrap gap-3 mt-auto">
                 {project.github && (
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-gray-700 dark:text-dark-para text-light-para text-sm font-semibold uppercase tracking-wider hover:border-global-clr hover:text-global-clr hover:shadow-[0_0_10px_rgba(15,187,255,0.3)] transition-all"
+                    className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-gray-700 dark:text-dark-para text-light-para text-sm font-semibold uppercase tracking-wider hover:border-global-clr hover:text-global-clr hover:shadow-[0_0_10px_rgba(15,187,255,0.3)] transition-all"
                   >
                     <FaGithub size={16} />
                     GitHub
@@ -80,7 +80,7 @@ const Projects = () => {
                     href={project.webapp}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-global-clr text-global-clr text-sm font-semibold uppercase tracking-wider hover:bg-global-clr hover:text-dark-bg hover:shadow-[0_0_15px_rgba(15,187,255,0.4)] transition-all"
+                    className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-global-clr text-global-clr text-sm font-semibold uppercase tracking-wider hover:bg-global-clr hover:text-dark-bg hover:shadow-[0_0_15px_rgba(15,187,255,0.4)] transition-all"
                   >
                     <HiOutlineExternalLink size={16} />
                     Live Demo

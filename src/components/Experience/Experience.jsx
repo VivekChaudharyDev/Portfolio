@@ -40,7 +40,7 @@ const Experience = () => {
               <div className={`flex w-full items-center ${isEven ? "md:flex-row-reverse" : "md:flex-row"}`}>
                 
                 {/* 1. Card Container */}
-                <div className="w-full md:w-1/2 pl-12 md:pl-0">
+                <div className="w-full md:w-1/2 pl-14 md:pl-0">
                   <div className={`${isEven ? "md:pl-4 lg:pl-4" : "md:pr-4 lg:pr-4"}`}>
                     <Tilt
                       tiltMaxAngleX={10}

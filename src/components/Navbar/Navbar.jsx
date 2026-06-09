@@ -120,7 +120,7 @@ const Navbar = () => {
       const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
 
-      setActiveSection(sectionId);
+      setActiveSection(itemId);
     }
   };
 
@@ -225,7 +225,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Items */}
       {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#053c48]/60 backdrop-blur-lg z-50 rounded-lg shadow-lg">
+        <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-4/5 bg-[#053c48]/60 backdrop-blur-lg z-50 rounded-lg shadow-lg">
           <ul className="flex flex-col items-center space-y-4 py-4 text-dark-text">
             {menuItems.map((item) => (
               <li

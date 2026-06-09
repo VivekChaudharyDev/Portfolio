@@ -21,41 +21,37 @@ const About = () => {
   }, []);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShow(true), 500); // typingDelay = 500ms
+    const timer = setTimeout(() => setShow(true), 500);
     return () => clearTimeout(timer);
   }, []);
+
   return (
     <section
       id="about"
-      className="py-4 px-[7vw] md:px-[7vw] lg:px[20vw] font-sans mt-12 md:mt-16 lg:mt-20"
+      className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-12 md:mt-16 lg:mt-20"
     >
-      <div className="flex flex-col md:flex-row justify-between items-center">
-        {/* Left Side */}
-        {/* Left Side */}
-        <div className="md:w-1/2 flex justify-center md:justify-end mt-4 mb-10 ml-3 relative">
+      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
+
+        {/* Left Side - Image */}
+        <div className="md:w-1/2 flex justify-center md:justify-end mt-4 mb-6 md:mb-0 relative shrink-0">
           <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:h-[30rem] md:w-[30rem] rounded-full relative flex items-center justify-center"
+            className="w-48 h-48 sm:w-64 sm:h-64 md:h-[26rem] md:w-[26rem] lg:h-[30rem] lg:w-[30rem] rounded-full relative flex items-center justify-center"
             tiltMaxAngleX={15}
             tiltMaxAngleY={15}
             perspective={1000}
             scale={1.05}
             transitionSpeed={1500}
           >
-            {/* 1. GLOW LAYERS (Background) */}
+            {/* Glow */}
             <div className="absolute inset-0 rounded-full pointer-events-none"
               style={{
                 boxShadow: `-18px 0px 60px 12px rgba(34, 211, 238, 0.5),
                     18px 0px 60px 12px rgba(236, 72, 153, 0.5)`
               }}
             />
-
-            {/* 2. THE ACTUAL GRADIENT RING */}
-            {/* We use padding to define the ring thickness. The background of this div is the ring. */}
+            {/* Gradient Ring */}
             <div className="absolute inset-0 rounded-full p-[4px] bg-gradient-to-tr from-cyan-400 via-pink-500 to-purple-600">
-
-              {/* 3. THE IMAGE CONTAINER */}
-              {/* This div is nested INSIDE the ring div. 
-          Its background creates the "black gap" look or seamless look depending on padding. */}
+              {/* Image */}
               <div className="h-full w-full rounded-full overflow-hidden bg-[#020c1b] flex items-center justify-center">
                 <img
                   src={isDark ? darkProfileImage : profileImage1}
@@ -66,17 +62,18 @@ const About = () => {
             </div>
           </Tilt>
         </div>
-        {/* Right Side */}
-        <div className="md:w-1/2 text-center md:text-left ml-15 mr-10 md:mt-0">
+
+        {/* Right Side - Text */}
+        <div className="md:w-1/2 text-center md:text-left md:mt-0">
           {/* Greeting */}
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold dark:text-dark-text text-light-text mb-2 leading-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl font-bold dark:text-dark-text text-light-text mb-1 leading-tight">
             Hi, I am
           </h1>
           {/* Name */}
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold dark:text-dark-text text-light-text mb-4 leading-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold dark:text-dark-text text-light-text mb-4 leading-tight whitespace-nowrap">
             Vivek Kumar
           </h2>
-          {/* Skills heading with typing effect */}
+          {/* Typewriter */}
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-global-clr leading-tight">
             <span className="dark:text-dark-text text-light-text">I am a </span>
             {show && <Typewriter
@@ -94,16 +91,17 @@ const About = () => {
               delaySpeed={2000}
             />}
           </h3>
-          {/* About me paragraph */}
-          <p className="text-base sm:text-lg md:text-lg dark:text-dark-para text-light-para mb-10 mt-8 leading-relaxed text-justify tracking-tight">
+          {/* Paragraph */}
+          <p className="text-base sm:text-lg md:text-lg dark:text-dark-para text-light-para mb-10 mt-6 leading-relaxed tracking-tight text-justify">
             I am an MCA student and aspiring software engineer with experience in cloud computing,
             full-stack development, and AI projects. I focus on building practical solutions,
             improving my skills, and creating meaningful real-world applications.
           </p>
-
           {/* Resume Button */}
-          <a href="https://drive.usercontent.google.com/u/0/uc?id=1DLDLtIzLgbypMDicLsJp_Wt5zaxyU_tA&export=download" rel="noopener noreferrer"
-            target="_blanck"
+          <a
+            href="https://drive.usercontent.google.com/u/0/uc?id=1DLDLtIzLgbypMDicLsJp_Wt5zaxyU_tA&export=download"
+            rel="noopener noreferrer"
+            target="_blank"
             className="inline-block dark:text-dark-text text-light-text py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
               background: 'linear-gradient(90deg, #ff499e, #f25ea3)',
@@ -113,12 +111,10 @@ const About = () => {
             DOWNLOAD CV
           </a>
         </div>
+
       </div>
     </section>
   );
 };
 
 export default About;
-
-
-{/* I am going to take backup of my portfolio*/ }

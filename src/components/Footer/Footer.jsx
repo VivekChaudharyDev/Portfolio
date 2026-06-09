@@ -35,7 +35,7 @@ const Footer = () => {
       <div className='container mx-auto text-center'>
         <h2 className='text-xl font-semibold text-global-clr'>Vivek Kumar</h2>
         {/* Navigation Links */}
-        <nav className='flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4'>
+        <nav className='flex flex-wrap justify-center gap-x-4 gap-y-2 sm:gap-x-6 mt-4'>
           {[
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },
