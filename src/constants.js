@@ -112,7 +112,7 @@ export const SkillsInfo = [
       img: infosyslogo,
       role: "System Engineer",
       company: "Infosys",
-      date: "Upcoming - Present",
+      date: "Aug 2026 - Present",
       desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
       skills: [
         "HTML",
